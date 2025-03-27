@@ -1,0 +1,16 @@
+Spark UI to narzędzie, które pozwala na monitorowanie i analizowanie działania aplikacji Spark. Jest dostępne na porcie 4040 domyślnie i dzieli się na kilka sekcji:
+
+1. Stages (Etapy):
+W tej zakładce widzimy wszystkie etapy (stages) aplikacji. Dla każdego etapu pokazane są metryki, takie jak czas trwania, liczba zadań i liczba przesyłanych danych. Pomaga to zrozumieć, które etapy zajmują najwięcej czasu i mogą wymagać optymalizacji.
+
+2. Jobs (Zadania):
+Zakładka ta pokazuje listę wszystkich uruchomionych zadań w aplikacji. Widać tu statusy zadań (np. zakończone, w trakcie) oraz ich czas wykonania. Dzięki temu można łatwo sprawdzić, jak przebiegają zadania i czy nie napotkały problemów.
+
+3. Storage (Przechowywanie):
+W tej sekcji widzimy szczegóły dotyczące danych przechowywanych w pamięci (RDD, DataFrames itp.). Można tu zobaczyć, ile danych zostało załadowanych do pamięci i jak są one rozdzielone w klastrze.
+
+4. Executors (Wykonawcy):
+Ta zakładka pokazuje szczegóły dotyczące wykonawców (executors), czyli jednostek wykonujących obliczenia. Można tu zobaczyć, ile pamięci i procesora używa każdy wykonawca, jak długo działa oraz ile zadań wykonał.
+
+5. SQL (SQL):
+Jeśli aplikacja używa zapytań SQL, ta zakładka pokazuje szczegóły wykonanych zapytań, w tym czas trwania i liczbę wykonanych wierszy. Pomaga to monitorować zapytania i znaleźć ewentualne wąskie gardła w przetwarzaniu danych.
