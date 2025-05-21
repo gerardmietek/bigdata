@@ -1,0 +1,18 @@
+Zadanie 1 – Notatka do interview
+
+Wybrane zagadnienie: Wykrywanie anomalii w produkcji (IoT) – chmura Azure
+
+Cel: Zbudowanie PoC (Proof of Concept) do wykrywania anomalii w danych z linii produkcyjnej (np. wibracje, temperatura, ciśnienie).
+
+Proponowane narzędzia w Azure:
+
+1. Azure IoT Hub – do zbierania danych z urządzeń na linii produkcyjnej.
+2. Azure Stream Analytics – analiza danych w czasie rzeczywistym w celu wstępnego filtrowania i wykrycia podejrzanych odczytów.
+3. Azure Data Lake – magazyn danych do przechowywania dużych ilości surowych danych historycznych.
+4. Azure Machine Learning – trenowanie modelu ML do wykrywania anomalii (np. Isolation Forest, Autoencoder).
+5. Power BI / Azure Synapse Analytics – wizualizacja wykrytych anomalii, tworzenie dashboardów dla zespołu produkcyjnego.
+
+Korzyści:
+- Wczesne wykrywanie usterek i zapobieganie przestojom.
+- Skalowalność – można łatwo dodać nowe czujniki lub zakłady.
+- Gotowe narzędzia integrujące się w ramach jednej platformy (Azure).

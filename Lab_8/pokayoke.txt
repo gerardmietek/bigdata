@@ -1,0 +1,23 @@
+Poka Yoke – Metody odporne na błędy w pipeline danych (Azure)
+
+1. Walidacja danych wejściowych w Azure Stream Analytics
+   - Użycie warunków sprawdzających, czy dane z IoT Hub mieszczą się w akceptowalnych zakresach.
+   - Przykład: odrzucenie danych z czujników, jeśli temperatura > 100°C lub < -50°C.
+
+2. Automatyczne uzupełnianie brakujących danych (Data Imputation)
+   - W Azure Machine Learning zastosuj transformację, która automatycznie zastępuje brakujące wartości średnią/historią.
+   - Zapobiega błędom w czasie trenowania modelu lub przy analizie.
+
+3. Konfiguracja alertów w Azure Monitor
+   - Jeśli pipeline przestaje działać, uruchamia się automatyczne powiadomienie do zespołu DevOps.
+   - Przykład: alert na brak danych przez X minut z danego czujnika.
+
+4. Wersjonowanie i testowanie modeli ML
+   - Modele w Azure Machine Learning mają wersje – w razie błędu łatwo wrócić do poprzedniej wersji.
+   - Można też testować modele na danych testowych przed wdrożeniem.
+
+5. Konfiguracja przez plik YAML/JSON
+   - Wszelkie wartości progowe, typy czujników itp. trzymane w pliku konfiguracyjnym.
+   - Pozwala aktualizować parametry bez zmieniania kodu (np. „threshold”: 75).
+
+Dzięki tym metodom pipeline staje się bardziej odporny na błędy i lepiej przygotowany do środowiska produkcyjnego.
