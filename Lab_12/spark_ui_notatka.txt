@@ -1,0 +1,30 @@
+
+Spark UI – Elementy i ich funkcje:
+
+1. Jobs:
+   - Pokazuje listę zadań (jobs) wykonywanych w aplikacji.
+   - Każde zadanie to zbiór powiązanych operacji na RDD/DataFrame.
+   - Dla każdego joba można sprawdzić status, czas wykonania, liczbę stage'y.
+
+2. Stages:
+   - Podział jobów na mniejsze jednostki – etapy (stages).
+   - Pokazuje szczegółowe informacje o każdym etapie: liczba zadań (tasks), czas trwania, błędy.
+   - Tutaj widać m.in. wykres Gantt’a i statystyki poszczególnych zadań.
+
+3. Storage:
+   - Informacje o przechowywanych (zpersistowanych) RDD/DataFrame.
+   - Wskazuje liczbę partycji, wielkość danych w pamięci/dysku.
+   - W tym miejscu można zobaczyć dystrybucję danych – gdzie i ile danych jest przechowywane.
+
+4. Executors:
+   - Lista aktywnych executorów (procesów roboczych).
+   - Pokazuje wykorzystanie pamięci, liczbę wykonanych zadań, czas działania.
+   - Można sprawdzić rozkład obciążenia między executorami.
+
+5. SQL/Dataframe:
+   - Dostarcza informacje o zapytaniach SQL i operacjach DataFrame.
+   - Pokazuje plan wykonania zapytania (logical i physical plan).
+   - Przydatne do debugowania wydajności zapytań.
+
+Informacja o dystrybucji danych:
+   - Znajduje się głównie w zakładce "Storage" (ilość i rozmieszczenie partycji danych) oraz "Executors" (gdzie dane są przetwarzane).
